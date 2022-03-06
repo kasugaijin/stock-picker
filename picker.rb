@@ -5,7 +5,7 @@ def picker(prices)
   prices_hash = {}
   prices.each_index {|i| prices_hash[i] = prices[i]}
   
-  #make an array of prices_hash keys to so you can reference hash index on line 25
+  #make an array of prices_hash keys to so you can reference hash index on line 21
   prices_hash_keys = prices_hash.keys
 
   #make second hash with key (day) and value [] empty array for use below
@@ -14,7 +14,7 @@ def picker(prices)
   prices.each_index {|i| output_hash[i] = []}
 
   #loop through prices_hash, and for each k,v pair, execute a while loop that iterates 
-  #euqal to hash length minus the position of the given key (key index pulled from line 12)
+  #euqal to hash length minus the position of the given key (key index pulled from line 9)
   #then subtract the subsequent values in the hash from v, and store output in output_hash
   prices_hash.each do |k, v|
     c = 1
